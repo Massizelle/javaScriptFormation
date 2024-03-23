@@ -35,6 +35,34 @@
 
         var statut= (age>= 20) ? "adulte" : "mineur"
         console.log(statut)
+        //boucle
+        for (var i=0 ;i< 5 ; i++){
+            console.log(i)
+        }
+        var i =0
+        while(i<5){
+            console.log(i)
+            i++
+        }
+        do{
+            console.log(i)
+            i++
+        }while(i<5)
+        function calculerSomme (a , b) {
+            return a+b 
+        }
+        console.log( calculerSomme(2, 5))
+
+    function getMax ( x ,y , z){
+        if (x>z &&  x>y){
+            return x
+        }else if ( y>x &&  y>z ){
+            return y
+        }else {
+            return z
+        }
+    }
+    console.log( "le plus grand nombre est : ", getMax(3, 6 , 76))
     </script>
 </body>
 </html>
