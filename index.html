@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="massizelle"
+        var age=20
+        console.log("je suis ", name , " et j'ai " , age , " ans")
+        console.log(`je suis  ${name} et j'ai ${age}ans`  )
+        if (name == "massizelle"){
+            console.log(" je suis massizelle ")
+        } else {
+            console.log( " je ne suis pas massizelle")
+        }
+
+         var note_js=10
+         var note_python = 12
+         function moyenne (){
+            return (note_js+ note_python)/2
+         }
+         if ( moyenne()>10){
+            console.log( "vous etes admis et vous avez une moyenne de : " , moyenne() )
+         }else if( moyenne()== 10) {
+            console.log(" vous devez passer le rattrapage ")
+         } else {
+            console.log(" vous etes ajourné")
+         }
+
+         var statutA= (moyenne() >10) ? "admis" : (moyenne() ==10) ? "rattrapage" : "ajourné"
+         console.log ( statutA )
+
+        var statut= (age>= 20) ? "adulte" : "mineur"
+        console.log(statut)
+    </script>
+</body>
+</html>
