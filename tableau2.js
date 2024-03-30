@@ -32,5 +32,23 @@ console.log(resultat);
 
 
 let fruits = ["Bannane","Fraises","Cerises","Poires"]
-
 const quelFruit = prompt("Vous desirez acheter quel fruit?");
+
+let existe = false
+let t=0
+for ( let i in fruits){
+    if ( quelFruit== fruits[i]){
+        fruits[t]=""
+        alert("il existe")
+        existe = true
+    }
+} 
+if ( existe == false){
+document.writeln( " le fruit que vous avez choisi n'existe pas")
+}
+let i =0  
+for ( i in fruits){
+    document.write(fruits[i]+ "<br/>")
+}
+
+
