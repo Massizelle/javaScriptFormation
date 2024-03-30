@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creer une fonction qui prend en parametre deux aguments : 1 er arg : chaine de cara , 2 eme : nmbr de fois a rep a chaine de cara
+        // repeter ("massizelle", 2)=> massizelle massizelle
+        function repeter (chaine , j) {
+            for ( let i=0 ; i<j ; i++ ){
+                document.writeln(chaine)
+            }
+        }
+        repeter ("massizelle", 2)
+
+        function repeter2 (chaine , j){
+            return chaine.split("").map( function(i){ return i.repeat(j) }).join("") }
+        console.log(repeter2("massizelle", 2))
+
+        let repeter3 =(chaine , j) =>{
+            return chaine.split("").map( i => i.repeat(j)).join("")
+        }
+        console.log(repeter3("massizelle", 2))
+    </script>
+</body>
+</html>

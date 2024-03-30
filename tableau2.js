@@ -29,11 +29,8 @@ let texte = "Hello, devs we are in 2024";
 let resultat = remplacee(texte);
 console.log(resultat);
 
-
-
 let fruits = ["Bannane","Fraises","Cerises","Poires"]
 const quelFruit = prompt("Vous desirez acheter quel fruit?");
-
 let existe = false
 let t=0
 for ( let i in fruits){
