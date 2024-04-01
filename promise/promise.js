@@ -12,7 +12,7 @@ promise.then((value)=>{
     console.log("c'est réussi")
 })
 //get users
-const baseUrl = "https://jsonplaceholder.typicode.com " // from json placeholder website
+const baseUrl = "https://jsonplaceholder.typicode.com" // from json placeholder website
 const getusers=()=>{
     fetch(`${baseUrl}/users`)
     .then((result)=>{
@@ -45,3 +45,18 @@ const getDogImg=()=>{
     })
 }
     getDogImg()
+
+    //get comments
+const getComments=async ()=>{
+    const response = await fetch(`${baseUrl}/comments`)
+    const resulttt =await response.json()
+    console.log(resulttt)
+    resulttt.forEach(element => {
+        if ( element?.email){
+        document.writeln(element.email)}
+        else {
+            document.writeln(" l'email est vide") 
+        }
+    });
+}
+getComments()
